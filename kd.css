@@ -26,7 +26,7 @@ body {
 }
 
 .Front{
-  color:black;
+  color:white;
   position: relative;
   display: block;
   text-align: center;
@@ -35,7 +35,7 @@ body {
 }
 
 .smallFront{
-  color: black;
+  color: white;
   position: relative;
   display: block;
   text-align: center;
