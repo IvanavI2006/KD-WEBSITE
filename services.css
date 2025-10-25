@@ -1,21 +1,19 @@
-/* File: style.css */
-/* KD Sportswear Website */
-
-:root {
-  --blue: #0d5a83;
-  --accent: #5d2a7a;
-  --muted: #6b6b6b;
-  --container: 1100px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-* {
-  box-sizing: border-box;
+html, body {
+  height: 100%;
+  margin: 0px;
 }
 
 body {
-  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-  margin: 0;
-  color: #222;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
 }
 
 .container {
@@ -24,10 +22,13 @@ body {
   padding: 0 20px;
 }
 
-/* Header */
 .top-header {
-  background: var(--blue);
-  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 20px;
+  background-color: rgb(59, 90, 180);
 }
 
 .header-inner {
@@ -40,38 +41,46 @@ body {
 .logo-title {
   display: flex;
   align-items: center;
-  gap: 12px;
+  height: 60px;
+  margin-top: 26px;
 }
 
 .logo {
-  width: 56px;
-  height: 56px;
-  object-fit: contain;
-  border-radius: 6px;
+  height: 100px;
+  width: auto;
+  display: block;
 }
 
 .site-title {
-  font-size: 16px;
-  margin: 0;
+  color: white;
+  font-size: 24px;
+  margin-left: 15px;
+  margin-bottom: 25px;
 }
 
 .navbar ul {
-  list-style: none;
+  list-style-type: none;
   display: flex;
-  gap: 18px;
+  gap: 20px;
+}
+
+.navbar li h2 {
+  font-size: 16px;
   margin: 0;
-  padding: 0;
+  font-weight: bold;  
 }
 
 .navbar a {
-  color: #fff;
+  color: white;
   text-decoration: none;
-  font-weight: 600;
+  padding: 5px 10px;
+  display: block;
+  font-weight: bold;  
 }
 
-.navbar a.active {
-  border-bottom: 3px solid rgba(255, 255, 255, 0.15);
-  padding-bottom: 6px;
+.navbar a:hover {
+  background-color: rgb(73, 73, 170);
+  border-radius: 5px;
 }
 
 /* Main */
@@ -113,7 +122,7 @@ body {
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  background: var(--accent);
+  background: #3e007a; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -124,7 +133,7 @@ body {
   width: 36px;
   height: 36px;
   object-fit: contain;
-  filter: brightness(0) invert(1); /* makes icons white if they’re black */
+  filter: none; 
 }
 
 .card h3 {
@@ -144,7 +153,9 @@ body {
 
 /* Specs */
 .specs {
-  margin-top: 40px;
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 0 20px;
 }
 
 .specs h2 {
@@ -165,9 +176,8 @@ body {
 }
 
 .spec {
-  margin-bottom: 25px; /* Adds space between bordered boxes */
+  margin-bottom: 25px;
 }
-
 
 .box h5 {
   margin-top: 0;
@@ -189,7 +199,7 @@ body {
   padding: 0;
 }
 
-/* === How It Works Section === */
+/* How It Works Section */
 .how-it-works {
   background-color: #fff;
   padding: 70px 0;
@@ -213,7 +223,6 @@ body {
   max-width: 1000px;
 }
 
-/* Connector line behind circles */
 .steps-container::before {
   content: '';
   position: absolute;
@@ -236,7 +245,7 @@ body {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background-color: #3e007a; /* Purple */
+  background-color: #3e007a;
   color: #fff;
   font-weight: 700;
   font-size: 1.1em;
@@ -244,21 +253,6 @@ body {
   margin: 0 auto 15px;
   z-index: 3;
   position: relative;
-}
-
-.step h4 {
-  font-size: 1em;
-  font-weight: 600;
-  margin-bottom: 8px;
-  color: #000;
-}
-
-.step p {
-  font-size: 0.85em;
-  color: #555;
-  line-height: 1.4;
-  max-width: 200px;
-  margin: 0 auto;
 }
 
 .step h4 {
@@ -287,8 +281,7 @@ body {
   z-index: 1;
 }
 
-
-/* --- Payment & Delivery Information --- */
+/* Payment & Delivery Information */
 .payment-info {
   padding: 60px 0;
   background-color: #fff;
@@ -352,7 +345,6 @@ body {
   font-weight: bold;
 }
 
-
 /* Responsive */
 @media (max-width: 980px) {
   .cards {
@@ -364,14 +356,13 @@ body {
   }
 
   .spec {
-  border: 1px solid rgba(93, 42, 122, 0.12);
-  border-radius: 12px;
-  padding: 18px;
-  margin-bottom: 25px; 
-  background: #fff;    
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.03);
-}
-
+    border: 1px solid rgba(93, 42, 122, 0.12);
+    border-radius: 12px;
+    padding: 18px;
+    margin-bottom: 25px;
+    background: #fff;    
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.03);
+  }
 
   .three-grid {
     grid-template-columns: 1fr;
@@ -401,16 +392,6 @@ body {
   .footer-columns {
     grid-template-columns: 1fr;
   }
-}
-
-.specs {
-  max-width: 1200px;
-  margin: 60px auto;
-  padding: 0 20px;
-}
-
-.spec h3, .spec h4 {
-  color: #1e1e1e;
 }
 
 .custom-specs {
@@ -476,28 +457,87 @@ body {
   top: 0;
 }
 
-/* Responsive */
-@media (max-width: 960px) {
-  .two-col, .three-col {
-    flex-direction: column;
+footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(65, 98, 197);
+  color: white;
+  padding: 20px;
+  z-index: 1000;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.footer-columns ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-columns li {
+  margin-bottom: 8px;
+}
+
+.footer-columns a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-columns a:hover {
+  text-decoration: underline;
+}
+
+.kdfooter{
+  margin-right: 200px;
+}
+
+.footer fb{
+  height: -100px;
+  width: -100px;
+  bottom: 0px;
+  right: 0px;
+}
+
+/* === RESPONSIVE (KEEP AS IN SECOND CODE, MAIN SECTION UNAFFECTED) === */
+@media (max-width: 980px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .custom-specs {
+  .spec.two-col {
+    grid-template-columns: 1fr;
+  }
+
+  .spec {
+    border: 1px solid rgba(93, 42, 122, 0.12);
+    border-radius: 12px;
+    padding: 18px;
+    margin-bottom: 25px;
+    background: #fff;    
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.03);
+  }
+
+  .three-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .steps {
     flex-direction: column;
   }
 }
 
-/* === Unified Border Color (Global Consistency) === */
-.card,
-.spec.full,
-.custom-specs div,
-.two-col .box,
-.three-col .box,
-.size-table th,
-.size-table td,
-.info-card {
-  border-color: rgb(6, 80, 132) !important;
+@media (max-width: 640px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
 }
-
-
-
