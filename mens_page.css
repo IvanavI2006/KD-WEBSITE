@@ -6,8 +6,28 @@
 }
 
 body {
-  background-color: #639ce7;
-  color: #fff;
+color: #fff;
+}
+
+body.BG1Men {
+background-image: url(Gallery_Backgrounds/BLUE_BG_1.png);  
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+body.BG2Men {
+background-image: url(Gallery_Backgrounds/BLUE_BG_2.png);  
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+body.BG3Men {
+background-image: url(Gallery_Backgrounds/BLUE_BG_3.png);  
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 }
 
 /* ======== HEADER ======== */
