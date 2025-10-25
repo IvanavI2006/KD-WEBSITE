@@ -134,6 +134,16 @@ body {
   margin-top: 10px;
 }
 
+.mapping img{
+  box-shadow: 4px 7px 7px 0px #000042;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.mapping:hover{
+   transform: scale(1.03);
+}
+
 /* RIGHT: CONTACT FORM */
 .contact-form {
   flex: 1 1 400px;
