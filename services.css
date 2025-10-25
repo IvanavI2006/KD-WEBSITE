@@ -106,17 +106,28 @@ body {
 .cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 18px;
+  gap: 30px; /* adds space between cards */
+  padding: 0 40px; /* adds space on both left and right sides */
+  justify-items: center;
 }
 
 .card {
   background: #fff;
-  border: 1px solid rgba(93, 42, 122, 0.12);
-  padding: 22px;
-  border-radius: 12px;
+  border: 2px solid #c6b7ff; /* more visible border */
+  border-radius: 15px; /* rounded edges */
+  padding: 30px 20px;
+  width: 100%;
+  max-width: 260px; /* makes them more square */
   text-align: center;
-  box-shadow: 0 6px 18px rgba(13, 90, 131, 0.03);
+  box-shadow: 0 6px 18px rgba(13, 90, 131, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(13, 90, 131, 0.1);
+}
+
 
 .card-icon {
   width: 64px;
@@ -180,8 +191,41 @@ body {
 }
 
 .box h5 {
-  margin-top: 0;
+  font-size: 18px;
+  color: black;
+  margin-bottom: 15px; /* adds space under the heading */
 }
+
+/* === Consistent Heading & Table Spacing (Final Touch) === */
+
+.spec.full h5,
+.box h5 {
+  font-size: 18px;
+  color: #3e007a;
+  margin-bottom: 15px; /* adds space under the heading */
+}
+
+/* Ensure good spacing above tables (e.g., Size Chart) */
+.size-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px; /* prevents heading from sticking to the table */
+}
+
+.size-table th,
+.size-table td {
+  padding: 12px;
+  border-top: 1px solid #eee;
+  text-align: left;
+}
+
+/* Optional: improve readability of table header */
+.size-table th {
+  background-color: #f8f5ff;
+  color: #3e007a;
+  font-weight: 600;
+}
+
 
 .size-table {
   width: 100%;
@@ -457,6 +501,37 @@ body {
   top: 0;
 }
 
+/* Adjust spacing for specification boxes */
+.box h4 {
+  margin-bottom: 15px; /* adds space between title and list */
+  font-size: 18px;
+  color: var(--blue);
+}
+
+.check-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.check-list li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 12px; /* more space between list items */
+  line-height: 1.6;
+}
+
+.check-list li::before {
+  content: "✔";
+  color: #5a3cff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+
 footer {
   bottom: 0;
   left: 0;
@@ -580,3 +655,73 @@ footer {
     margin-right: 0;
   }
 }
+
+.card,
+.two-col .box,
+.three-col .box,
+.custom-specs div {
+  border: 2px solid #c6b7ff;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(13, 90, 131, 0.05);
+  padding: 25px;
+}
+
+.spec,
+.spec.full {
+  border: none; /* removes outer box border */
+  box-shadow: none; /* removes any extra shadow spacing */
+  padding: 0; /* aligns boxes with the grid nicely */
+}
+
+l
+.two-col .box,
+.three-col .box,
+.custom-specs div {
+  padding: 30px;
+}
+
+/* === Unified Border + Alignment Fix === */
+
+/* Keep clean, consistent borders for cards and inner boxes */
+.card,
+.two-col .box,
+.three-col .box,
+.custom-specs div {
+  border: 2px solid #c6b7ff;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(13, 90, 131, 0.05);
+  padding: 25px;
+}
+
+/* Keep borders for main sections like Pricing Structure and Size Chart */
+.spec.full {
+  border: 2px solid #c6b7ff;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(13, 90, 131, 0.05);
+  padding: 25px;
+}
+
+/* Remove outer border ONLY from grouped sections (like Custom Specifications) */
+.spec:has(.custom-specs) {
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+/* Optional: tighter spacing for side-by-side boxes */
+.two-col,
+.three-col,
+.custom-specs {
+  gap: 25px;
+}
+
+/* Consistent padding for small boxes */
+.two-col .box,
+.three-col .box,
+.custom-specs div {
+  padding: 25px;
+}
+
