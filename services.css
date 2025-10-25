@@ -162,6 +162,18 @@ body {
   margin-top: 8px;
 }
 
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.card-link:hover .card {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(13, 90, 131, 0.15);
+}
+
+
 /* Specs */
 .specs {
   max-width: 1200px;
