@@ -1,111 +1,287 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Services</title>
-    <link rel="stylesheet" href="services.css" />
-    <link rel="shortcut icon" href="KD IMAGE.jpg" type="image/jpeg" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KD Sportswear & Apparel — Services</title>
+  <link rel="stylesheet" href="services.css">
+  <link rel="shortcut icon" href="KD IMAGE.jpg" type="image/jpeg" />
 </head>
 <body>
-
   <header class="top-header">
     <div class="logo-title">
       <img src="KD_IMAGE-removebg-preview (1) 1.png" alt="KD Logo" class="logo" />
       <h1 class="site-title">KD Sportswear & Apparel</h1>
     </div>
 
-    <nav class="navbar">
-      <ul>
-        <li><a href="Home.html"><h2>Home</h2></a></li>
-        <li><a href="about.html"><h2>About</h2></a></li>
-        <li><a href="gallery.html"><h2>Latest design</h2></a></li>
-        <li><a href="gallery.html"><h2>Gallery</h2></a></li>
-        <li><a href="services.html"><h2>Services</h2></a></li>
-      </ul>
-    </nav>
+      <nav class="navbar">
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="LatestDesign.html">Latest design</a></li>
+          <li><a href="main_gallery.html">Gallery</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="contacts.html"><h2>Contacts</h2></a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section>
+  <main class="container main-content">
+    <section class="services-hero">
       <h2>Services & Customization</h2>
-      <p>From concept to creation, we handle everything to bring your custom apparel to life</p>
-      <div class="service-cards">
-            <div class="card">
-                <div class="icon">
-                  <img src="T-Shirt icon.png" alt="T-shirt icon">
-                </div>
-                <h3>Custom T-shirt design</h3>
-                <p>Personalized t-shirts with your unique design or message</p>
-                <span class="price">Starting at PHP300</span>
-            </div>
+      <p class="lead">From concept to creation, we handle everything to bring your custom apparel to life</p>
 
-            <div class="card">
-                <div class="icon">
-                  <img src="Sports Teams.png" alt="Jersey icon">
-                </div>
-                <h3>Team Jerseys</h3>
-                <p>Professional jerseys for sports teams with numbers and names</p>
-                <span class="price">Starting at PHP300</span>
-            </div>
+      <div class="cards">
+        <article class="card">
+          <div class="card-icon"><img src="T-Shirt icon.png" alt="T-shirt Icon"></div>
+          <h3>Custom T-shirt design</h3>
+          <p>Personalized t-shirts with your unique design or message</p>
+          <p class="price">Starting at PHP300</p>
+        </article>
 
-            <div class="card">
-                <div class="icon">
-                  <img src="Sparkles.png" alt="Sparkle icon">
-                </div>
-                <h3>Special Edition Prints</h3>
-                <p>Limited edition designs for events and special occasions</p>
-                <span class="price">Starting at PHP300</span>
-            </div>
+        <article class="card">
+          <div class="card-icon"><img src="Sports Teams.png" alt="Team Jersey Icon"></div>
+          <h3>Team Jerseys</h3>
+          <p>Professional jerseys for sports teams with numbers and names</p>
+          <p class="price">Starting at PHP300</p>
+        </article>
 
-            <div class="card">
-                <div class="icon">
-                  <img src="Clock.png" alt="Clock icon">
-                </div>
-                <h3>Rush orders</h3>
-                <p>Fast turnaround for urgent projects (2-3 days)</p>
-                <span class="price">Starting at PHP300</span>
-            </div>
+        <article class="card">
+          <div class="card-icon"><img src="Sparkles.png" alt="Special Edition Print Icon"></div>
+          <h3>Special Edition Prints</h3>
+          <p>Limited edition designs for events and special occasions</p>
+          <p class="price">Starting at PHP300</p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon"><img src="Clock.png" alt="Rush Order Icon"></div>
+          <h3>Rush orders</h3>
+          <p>Fast turnaround for urgent projects (2-3 days)</p>
+          <p class="price">Starting at PHP300</p>
+        </article>
       </div>
     </section>
-  </main>
 
+    <section class="specs">
+      <h2>Product Specifications & Details</h2>
+      <p class="muted">Review detailed information about sizes, fabrics, pricing, and production times before placing your order</p>
 
-  <footer>
+      <div class="spec-grid">
+        <div class="spec full">
+          <h3>Custom Specifications</h3>
+          <div class="custom-specs">
+            <div>
+              <strong>Starting Price</strong>
+              <p>PHP300</p>
+            </div>
+            <div>
+              <strong>Production Time</strong>
+              <p>7-10 business days</p>
+            </div>
+            <div>
+              <strong>Rush Available</strong>
+              <p>(2-3 days, + PHP200)</p>
+            </div>
+          </div>
+        </div>
 
-    <div class="footer-columns">
-      <div class="kdfooter">
-        <h2>KD Sportswear</h2>
-        <h2>& Apparel </h2>
-        
+        <div class="spec two-col">
+          <div class="box">
+            <h5>Available Sizes</h5>
+            <ul class="check-list">
+              <li>XS (Extra Small)</li>
+              <li>S (Small)</li>
+              <li>M (Medium)</li>
+              <li>L (Large)</li>
+              <li>XL (Extra Large)</li>
+              <li>XXL (2XL)</li>
+              <li>XXXL (3XL)</li>
+              <li>Youth sized available</li>
+            </ul>
+          </div>
 
+          <div class="box">
+            <h5>Fabric Options</h5>
+            <ul class="check-list">
+              <li>100% Polydex</li>
+              <li>Cotton Blend (50/50 cotton-polyester, durable)</li>
+              <li>Tri-Blend (ultra-soft, vintage look)</li>
+              <li>Performance Fabric (moisture-wicking, athletic)</li>
+              <li>Organic Cotton (eco-friendly option)</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="spec two-col">
+          <div class="box">
+            <h5>Printing Methods</h5>
+            <ul class="check-list">
+              <li>Screen Printing (vibrant colors, bulk orders)</li>
+              <li>Direct-to-Garment (DTG) (full color, photo quality)</li>
+              <li>Vinyl Heat Transfer (solid colors, durable)</li>
+              <li>Sublimation (all-over prints)</li>
+            </ul>
+          </div>
+
+          <div class="box">
+            <h5>Color Options</h5>
+            <ul class="check-list">
+              <li>30+ base shirt colors available</li>
+              <li>Full-color printing available</li>
+              <li>Custom color matching</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="spec full">
+          <div class="box">
+            <h5>Pricing Structure</h5>
+            <ul class="check-list">
+              <li>1 shirt: ₱300 each</li>
+              <li>5–9 shirts: ₱250 each</li>
+              <li>10–24 shirts: ₱220 each</li>
+              <li>25–49 shirts: ₱200 each</li>
+              <li>50+ shirts: ₱180 each</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="spec full chart">
+          <h5>Size Chart (Approximate Measurements)</h5>
+          <table class="size-table">
+            <thead>
+              <tr><th>Size</th><th>Chest Width</th><th>Length</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>XS</td><td>31-34"</td><td>27"</td></tr>
+              <tr><td>S</td><td>34-37"</td><td>28"</td></tr>
+              <tr><td>M</td><td>38-41"</td><td>29"</td></tr>
+              <tr><td>L</td><td>42-45"</td><td>30"</td></tr>
+              <tr><td>XL</td><td>46-49"</td><td>31"</td></tr>
+              <tr><td>XXL</td><td>50-53"</td><td>32"</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+<section class="how-it-works">
+  <div class="container">
+    <h2>How It Works</h2>
+    <div class="steps-container">
+
+      <div class="step">
+        <div class="circle">01</div>
+        <h4>Share Your Vision</h4>
+        <p>Tell us about your design, or let us create something based on your concept</p>
       </div>
 
-     <ul>
+      <div class="step">
+        <div class="circle">02</div>
+        <h4>Design Consultation</h4>
+        <p>We create mockups and work with you to refine the design until it’s perfect</p>
+      </div>
+
+      <div class="step">
+        <div class="circle">03</div>
+        <h4>Chose Materials</h4>
+        <p>Choose from our range of premium fabrics, colors, and printing techniques</p>
+      </div>
+
+      <div class="step">
+        <div class="circle">04</div>
+        <h4>Production</h4>
+        <p>We bring your design to life with professional printing and quality checks</p>
+      </div>
+
+      <div class="step">
+        <div class="circle">05</div>
+        <h4>Delivery</h4>
+        <p>Pick up at our shop or have it delivered to your doorstep</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="payment-info">
+  <div class="container">
+    <h2>Payment & Delivery Information</h2>
+    <div class="info-grid">
+
+      <div class="info-card">
+        <div class="info-icon">💳</div>
+        <h3>Payment Options</h3>
+        <ul>
+          <li>Cash (In-store pickup)</li>
+          <li>Credit/Debit Cards (Visa, Mastercard, Amex)</li>
+          <li>Bank Transfer</li>
+          <li>Digital Wallets (PayPal, Venmo, GCash, PayMaya)</li>
+        </ul>
+      </div>
+
+      <div class="info-card">
+        <div class="info-icon">🚚</div>
+        <h3>Delivery Options</h3>
+        <ul>
+          <li>Free in-store pickup</li>
+          <li>Local delivery (₱90 within city)</li>
+          <li>Standard shipping (5-7 business days)</li>
+          <li>Express shipping (2-3 days, +₱200)</li>
+          <li>Bulk/special delivery available</li>
+        </ul>
+      </div>
+
+      <div class="info-card">
+        <div class="info-icon">📋</div>
+        <h3>Order Policy</h3>
+        <ul>
+          <li>50% deposit required to start production</li>
+          <li>Final payment before shipping/pickup</li>
+          <li>Design approval required before printing</li>
+          <li>7-day quality guarantee on all orders</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+    
+
+  </main>
+
+  <footer>
+    <div class="container footer-columns">
+      <div class="kdfooter">
+        <h2>KD Sportswear<br>& Apparel</h2>
+      </div>
+
+      <ul>
         <li><strong>Quick Links</strong></li>
         <li><a href="Home.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="main_gallery.html">Gallery</a></li>
       </ul>
+
       <ul>
         <li><strong>Services</strong></li>
         <li><a href="services.html">Custom T-shirts</a></li>
         <li><a href="services.html">Community shirts</a></li>
         <li><a href="services.html">Special Orders</a></li>
       </ul>
+
       <ul>
         <li><strong>Contacts</strong></li>
-        <li><a href="#">J. Hernandez Avenue</a></li>
-        <li><a href="#">Sta. Cruz, Naga City,Philippines</a></li>
-        <li><a href="#">09XXXXXXXXX</a></li>
-        <li><a href="#">kdsportswear2023@gmail.com</a></li>
+        <li>J. Hernandez Avenue</li>
+        <li>Sta. Cruz, Naga City, Philippines</li>
+        <li>09XXXXXXXXX</li>
+        <li>kdsportswear2023@gmail.com</li>
       </ul>
-    </div>  
-
-  </div>
-
+    </div>
   </footer>
-  
-</body>
 
+</body>
 </html>
