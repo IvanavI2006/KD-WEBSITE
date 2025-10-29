@@ -6,7 +6,7 @@
 }
 
 body {
-color: #fff;
+ background: rgba(0, 91, 150, 0.5);
 }
 
 body.BG1Men {
@@ -101,7 +101,7 @@ background-size: cover;
 
 .items a {
   text-decoration: none;
-  color: #fff;
+  color: black;
   background-color: rgba(83, 112, 243, 0.8);
   padding: 10px 20px;
   border-radius: 10px;
@@ -109,8 +109,7 @@ background-size: cover;
 }
 
 .items a:hover {
-  background-color: #f7d358;
-  color: #000;
+  color: white;
 }
 
 /* ======== T-SHIRT GALLERY ======== */
