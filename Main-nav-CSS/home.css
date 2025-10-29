@@ -72,7 +72,7 @@ main {
   flex: 1;
   padding: 20px;
   padding-bottom: 80px;
-  background-image: url("Jerseypicture-removebg-preview.png"), url("homepicbg.png");
+  background-image: url("../Main_navs_Images/Jerseypicture-removebg-preview.png"), url("../Main_navs_Images/homepicbg.png");
   background-repeat: no-repeat, no-repeat;
   background-size: contain, cover;
   background-position: center top;
