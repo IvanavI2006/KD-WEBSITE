@@ -33,9 +33,10 @@ body {
 }
 
 .logo {
-  height: 100px;
+  height: 150px;
   width: auto;
   display: block;
+  margin-top: -20px;
 }
 
 .site-title {
@@ -217,20 +218,64 @@ footer {
 }
 
 /* Responsive adjustments */
-@media (max-width: 992px) {
-  .footer-columns {
-    gap: 30px;
-  }
-}
 
-@media (max-width: 600px) {
-  .footer-columns {
-    flex-direction: column;
+@media (min-width: 1440px) {
+  .top-header {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
+    height: 70px;          /* same as Home */
+    padding: 0 40px;       /* same as Home */
+    background-color: rgb(6, 80, 132);
   }
 
-  .kdfooter {
-    margin-right: 0;
+  .logo-title {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    height: 80px;         
+    width: auto;
+  }
+
+  .site-title {
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 15px;
+  }
+
+  .navbar ul {
+    display: flex;
+    gap: 25px;
+    list-style-type: none;
+  }
+
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+    transition: 0.3s;
+    font-size: 30
+  }
+
+  .navbar a:hover {
+    background-color: rgb(73, 73, 170);
+    border-radius: 5px;
   }
 }
+
+  .Mission{
+    position: relative;
+    margin-top: 50px;
+  }
+  .Vision{
+    position: relative;
+    margin-top: 70px;
+  }
+
+  .shop img{
+    height: 700px;
+  }
+
